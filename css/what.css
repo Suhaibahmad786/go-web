@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+hr{
+    padding: 5px 10px;
+}
+.content-box{
+    width: 20%;
+    background-image: linear-gradient(to right, #0097B2, #7ED957 0%, 90deg);
+}

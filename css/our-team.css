@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+#team-hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url('/imgs/our-team.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#team-hero::before {
+    content: "";
+    position: absolute;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+.team-inner {
+
+    z-index: 1;
+}
+
+.team-inner h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: white;
+}
+
+.team-inner p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: black;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.teamsboxes {
+    margin: 25px auto;
+    max-width: 1200px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.teambox {
+    padding: 10px 0;
+    text-align: center;
+    width: 30%;
+    /* border: 1px solid black; */
+    border-radius: 14px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.267);
+}
+
+.teambox img {
+    width: 338px;
+    height: 256px;
+    border-radius: 14px;
+}
+
+.teambox h2 {
+    padding: 0 20px;
+    text-align: start;
+    padding-top: 5px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.teambox h4 {
+    padding: 0 20px;
+    text-align: start;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.teambox p {
+    padding: 0 20px;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.team-footer {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .team-inner h1 {
+        font-size: 38px;
+    }
+
+    .team-inner p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .container h2 {
+        font-size: 32px;
+    }
+
+    .container p {
+        font-size: 16px;
+        line-height: 20px;
+
+        width: 55%;
+    }
+
+    .teamsboxes {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .teambox img {
+        width: 212px;
+        height: auto;
+    }
+
+    .teambox h2 {
+        padding: 25px 0 0 10px;
+        font-size: 20px;
+    }
+
+    .teambox h4 {
+        padding: 0 0 0 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .teambox p {
+        padding: 0 0 0 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .team-footer {
+        margin-top: 145px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #team-hero {
+        height: 50vh;
+    }
+    #team-hero::before {
+        height: 50vh;
+    }
+    .team-inner p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .team-inner h1 {
+        font-size: 22px;
+    }
+    .container {
+        margin-top: 15px;
+    }
+    .container h2 {
+        font-size: 22px;
+    }
+    .container p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .teamsboxes {
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .teambox {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .teambox img {
+        width: 274px;
+        height: auto;
+    }
+    .teambox h2 {
+        padding: 14px 0 0 10px;
+        font-size: 18px;
+    }
+    .teambox p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .team-footer{
+        margin-top: 180px;
+    }
+}
