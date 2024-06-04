@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 60vh;
-    background-image: url('/imgs/our-team.jpg');
+    background-image: url('../imgs/our-team.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
